@@ -4,13 +4,11 @@
 #define TRIGGER   9 /*Define os pinos do Arduino D8 e D9 como porta do ECHO e TRIGGER.*/
 #define ECHO      8
 UltraSonicDistanceSensor distanceSensor(TRIGGER, ECHO); /*Inicializa o sensor usando os pinos TRIGGER and ECHO.*/
-#include <LiquidCrystal.h>  /*Inclui a biblioteca do sensor HC SR04*/
+#include <LiquidCrystal.h>  /*Inclui a biblioteca do //Configuracoes LCD 16x2  display LCD*///Configuracoes LCD 16x2  
 LiquidCrystal lcd(2, 3, 4, 5, 6, 7); /* Define o objeto "lcd" para controlar o LCD nos pinos. 2 à 7 do Arduino.*/
-// caracter bateria coracao
-byte coracao[8] = {B00000,B00000,B01010,B01010,B00000,B10001,B01110,B00000};
-//Configuracoes LCD 16x2  
-int screenWidth = 16;  
-int screenHeight = 2;  
+byte coracao[8] = {B00000,B00000,B01010,B01010,B00000,B10001,B01110,B00000};// caracter bateria coracao
+int screenWidth = 16;  //Configuracoes LCD 16x2  
+int screenHeight = 2;  //Configuracoes LCD 16x2  
 //String para as 2 linhas 
 //line1 = Scroll linha superior
 String line1 = "Col Est Julia H de Souza. 7 x 7 metros. Mariel Martins"; 
